@@ -1,6 +1,6 @@
 # React + Vite
 
-CoinGecko React Project -
+CoinGecko React Project -https://cryptospotter1.netlify.app/
 This project is a React application that integrates with the CoinGecko API to display cryptocurrency data eg.Prices. Users can search for cryptocurrencies, view their current prices, 24-hour changes, market cap, and more. The project features a responsive design and a user-friendly interface for exploring cryptocurrency data.
 
 Features
