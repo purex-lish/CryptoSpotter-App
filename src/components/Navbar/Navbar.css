@@ -1,0 +1,129 @@
+/* Base styles for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%; 
+    color: #add; 
+    border-bottom: 2px solid #3c3c3c;
+}
+
+/* Styles for the left section of the navbar */
+.navbar-left {
+    display: flex;
+    align-items: center; 
+    gap: 5px; /* Space between logo and title */
+}
+
+/* Responsive logo size */
+.navbar .logo {
+    width: max(12vw, 120px); /* Logo width responsive to viewport */
+}
+
+/* Title styling in the navbar */
+.navbar-title {
+    font-size: 24px; 
+    color: #add; 
+    margin: 0; /* Remove default margin */
+}
+
+/* Styles for the navigation menu */
+.navbar ul {
+    display: flex;
+    gap: 40px; /* Space between menu items */
+    list-style: none; 
+    margin: 0; 
+}
+
+/* Styling for each list item */
+.navbar li {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Styles for the right section of the navbar */
+.nav-right {
+    display: flex;
+    align-items: center; 
+    gap: max(1vw, 12px);
+}
+
+/* Styling for the currency select dropdown */
+.navbar select {
+    padding: 5px 8px;
+    border-radius: 6px; 
+    border: 2px solid white; 
+    background: transparent;
+    color: white; 
+}
+
+/* Dropdown option styling */
+.navbar option {
+    background-color: #09005c; 
+    color: white;
+}
+
+/* Styling for the Sign Up button */
+.navbar button {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px 25px;
+    border-radius: 20px; 
+    font-size: 15px;
+    font-weight: 500; 
+    color: #393939; 
+    background: white; 
+    border: none; 
+    cursor: pointer; 
+}
+
+/* Icon size in the button */
+.navbar button img {
+    width: 13px; 
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 20px 8%; 
+    }
+    .navbar button {
+        gap: 8px;
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 20px 5%;
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    .navbar ul {
+        display: none; 
+        flex-direction: column;
+        width: 100%; 
+        margin-top: 10px;
+        padding: 0; 
+        background: #3c3c3c; 
+    }
+    .navbar ul.active {
+        display: flex; /* Show menu when active */
+    }
+    .navbar li {
+        padding: 10px; 
+        color: white;
+        width: 100%;
+        text-align: center; 
+    }
+    .navbar button img {
+        width: 12px; /* Smaller icon size */
+    }
+    .navbar button {
+        width: 100%; /* Full width button */
+        margin-top: 10px; 
+    }
+}
